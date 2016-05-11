@@ -20,7 +20,7 @@
 #include <QFileDialog>
 #include <QScrollBar>
 #include <QtWidgets>
-
+#include <QDebug>
 
 // Local
 #include "mainwindow.h"
@@ -161,7 +161,7 @@ void MainWindow::dfuCommandComplete( int exitCode )
 	QString output = tr("Return Code: %1").arg( exitCode );
 	ui->dfuResultsTextEdit->append( output );
 
-    QString program = "EspruinoWebIDE.app";
+    QString program = "/Applications/EspruinoWebIDE.app";
     openEProcess.start(program);
 
     QString output1 = tr("Open the Espruino Web IDE");
@@ -174,7 +174,7 @@ void MainWindow::openArduino()
     ui->JavaScriptButton->setDisabled( false );
     ui->ArduinoButton->setDisabled( false );
     ui->ParticleButton->setDisabled( false );
-    QString program = "Arduino.app";
+    const QString program = "/Applications/Arduino.app";
     openAProcess.start(program);
     QString output = tr("Open the Arduino IDE");
     ui->dfuResultsTextEdit->append( output );
