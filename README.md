@@ -8,8 +8,8 @@ IDE Choose FrontEnd
 
 Copy Arduino.app and Espruino Web IDE.app to Application folder
 
+make a alias of the unixexcutable file and open it everytime you want to use(App is still not workable)
 
-select the bin file to upload and turn to the Javascrift mode
 
 ## Make dmg
 
