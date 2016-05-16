@@ -47,10 +47,7 @@ public:
 	~MainWindow();
 
 private slots:
-	void browseFiles();
 	void dfuFlashBinary();
-	void dfuCommandStatus();
-	void dfuCommandComplete( int exitCode );
     void openArduino();
     void openParticle();
 
